@@ -1,7 +1,7 @@
 # bmi
 
-BMI Calculator
-The BMI (Body Mass Index) Calculator is a simple Flutter application that allows users to calculate their BMI score based on their height and weight. BMI is a measure of body fat based on height and weight that applies to adult men and women.
+BMI Tracker
+The BMI (Body Mass Index) Tracker is a simple Flutter application that allows users to calculate their BMI score based on their height and weight. BMI is a measure of body fat based on height and weight that applies to adult men and women.
 
 Features
 Calculate BMI score: Input your height and weight, and the app will calculate your BMI score.
