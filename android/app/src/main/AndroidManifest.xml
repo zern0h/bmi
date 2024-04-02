@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.bmi">
    <application
-        android:label="bmi"
+        android:label="BMI Tracker"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -1,16 +1,10 @@
 # bmi
 
-A Simple BMI Calculator
+BMI Calculator
+The BMI (Body Mass Index) Calculator is a simple Flutter application that allows users to calculate their BMI score based on their height and weight. BMI is a measure of body fat based on height and weight that applies to adult men and women.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features
+Calculate BMI score: Input your height and weight, and the app will calculate your BMI score.
+View BMI status: Based on the calculated BMI score, the app provides a status indicating whether the user is underweight, normal weight, overweight, or obese.
+View BMI history: Users can view their BMI history, including past BMI scores and dates.
+Share BMI score: Users can share their BMI score with others via various sharing options available on the device.

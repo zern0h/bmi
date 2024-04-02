@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:bmi/utils/colors.dart';
 import 'package:page_transition/page_transition.dart';
@@ -8,7 +7,10 @@ import 'package:swipeable_button_view/swipeable_button_view.dart';
 import '../model/age_weight_widget.dart';
 import '../model/gender_widget.dart';
 import '../model/height_widget.dart';
-import '../model/score_screen.dart';
+import 'ScoreScreen.dart';
+
+
+
 
 
 class HomeScreen extends StatefulWidget {
@@ -40,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen>{
             )),
         centerTitle: true,
         title: const Text("Get Your BMI Value"),
-      ),
+  ),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(12),
@@ -132,5 +134,6 @@ class _HomeScreenState extends State<HomeScreen>{
   }
   void calculateBmi() {
     _bmiScore = _weight / pow(_height / 100, 2);
+
   }
 }

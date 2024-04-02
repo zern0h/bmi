@@ -7,5 +7,5 @@ class MyColors{
   static const Color btnBorderColor =  Color.fromARGB(255,62,59,86);
   static const Color subTitleTextColor = Color(0xFF9593a8);
 
-  static const Color guage1 =  Color.fromARGB(255,255, 225, 137);
+  static const Color gauge =  Color.fromARGB(255,255, 225, 137);
 }

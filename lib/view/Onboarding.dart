@@ -95,7 +95,7 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     listOfItems[index].title,
                                     textAlign: TextAlign.center,
-                                    style: textTheme.headline1,
+                                    style: textTheme.displayLarge,
                                   ),
                                 )),
 
@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                               Text(
                                 listOfItems[index].subTitle,
                                 textAlign: TextAlign.center,
-                                style: textTheme.headline2,
+                                style: textTheme.displayMedium,
                               ),
                             ),
                           ],

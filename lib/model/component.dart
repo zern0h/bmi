@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bmi/utils/colors.dart';
 
-import '../view/homescreen.dart';
+import '../view/HomeScreen.dart';
 
 class GetStartBtn extends StatelessWidget {
   const GetStartBtn({
@@ -27,7 +27,7 @@ class GetStartBtn extends StatelessWidget {
         decoration: BoxDecoration(
             color: MyColors.titleTextColor, borderRadius: BorderRadius.circular(20)),
         child: Center(
-          child: Text("GET STARTED", style: textTheme.headline4),
+          child: Text("GET STARTED", style: textTheme.headlineMedium),
         ),
       ),
     );
@@ -63,7 +63,7 @@ class SkipBtn extends StatelessWidget {
         onTap: onTap,
         splashColor: MyColors.btnBorderColor,
         child: Center(
-          child: Text("SKIP", style: textTheme.headline3),
+          child: Text("SKIP", style: textTheme.displaySmall),
         ),
       ),
     );

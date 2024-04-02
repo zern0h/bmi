@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:bmi/view/onboarding.dart';
+import 'package:bmi/view/Onboarding.dart';
 import 'package:bmi/utils/colors.dart';
 import 'package:flutter/services.dart';
+import 'package:hive_flutter/adapters.dart';
+import 'package:path_provider/path_provider.dart' as path_provider;
 
-void main() {
+import 'model/bmi_record.dart';
+
+
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
+  await Hive.initFlutter(appDocumentDir.path); // Initialize Hive with the app directory path
+  Hive.registerAdapter(BMIRecordAdapter()); // Register adapter
+  await Hive.openBox<BMIRecord>('bmi_records'); // Open the Hive box
   runApp(const MyApp());
 }
 
@@ -18,23 +29,23 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           textTheme: const TextTheme(
-            headline1: TextStyle(
+            displayLarge: TextStyle(
               fontSize: 25,
               color: MyColors.titleTextColor,
               fontWeight: FontWeight.bold,
             ),
-            headline2: TextStyle(
+            displayMedium: TextStyle(
                 fontSize: 18,
                 color: MyColors.subTitleTextColor,
                 fontWeight: FontWeight.w400,
                 wordSpacing: 1.2,
                 height: 1.3),
-            headline3: TextStyle(
+            displaySmall: TextStyle(
               fontSize: 23,
               color: MyColors.titleTextColor,
               fontWeight: FontWeight.bold,
             ),
-            headline4: TextStyle(
+            headlineMedium: TextStyle(
               fontSize: 23,
               color: Colors.white,
               fontWeight: FontWeight.bold,

@@ -2,8 +2,12 @@
 class Assets {
   Assets._();
 
+  static const String iconBMIIcon = 'assets/icon/BMI_icon.png';
+  static const String imagesBMI = 'assets/images/BMI.png';
   static const String imagesSlide1 = 'assets/images/slide1.png';
   static const String imagesSlide2 = 'assets/images/slide2.png';
   static const String imagesSlide3 = 'assets/images/slide3.png';
+  static const String imagesXx = 'assets/images/xx.png';
+  static const String imagesXy = 'assets/images/xy.png';
 
 }
